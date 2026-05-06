@@ -1,0 +1,42 @@
+{
+  "api": {
+    "username": "YOUR_USERNAME",
+    "api_key": "YOUR_API_KEY",
+    "endpoint": "https://api.topstepx.com"
+  },
+
+  "contracts": [
+    {
+      "id": "CON.F.US.MNQ.M25",
+      "tick_size": 0.25,
+      "tick_value": 0.5
+    }
+  ],
+
+  "strategy": {
+    "ema_length": 9,
+    "extension_threshold_points": 75,
+    "risk_reward_min": 1.5,
+    "position_size": 1,
+    "cooldown_seconds": 300,
+    "vwap_mode": "tick"  
+  },
+
+  "session": {
+    "enabled": true,
+    "start": "09:30",
+    "end": "16:00",
+    "timezone": "US/Eastern"
+  },
+
+  "backtest": {
+    "enabled": false,
+    "data_file": "historical_data.csv"
+  },
+
+    "trail": {
+    "activation_points": 30,
+    "use_trailing": true
+    }
+
+}
